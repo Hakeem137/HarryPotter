@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Harry Potter | Hero Section</title>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      font-family: 'Georgia', serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: 'Cloister Black', serif;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #c4b998;
+      text-decoration: none;
+      font-size: 14px;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 1px;
+      background: #c4b998;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://wallpapercave.com/wp/wp4056410.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 72px;
+      font-family: 'Harry P', serif;
+      color: #ddd;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .characters {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      padding: 0 60px;
+    }
+
+    .characters img {
+      width: 180px;
+      max-height: 400px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+    }
+
+    .fog {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 150px;
+      background: url('https://i.ibb.co/8X3Yj1J/fog.png') repeat-x;
+      background-size: cover;
+      opacity: 0.5;
+    }
+
+    .scroll-arrow {
+      position: absolute;
+      bottom: 20px;
+      font-size: 28px;
+      color: #c4b998;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+    .social-icons {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 10;
+    }
+
+    .social-icons a {
+      color: #c4b998;
+      font-size: 20px;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .numbers {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 16px;
+      color: #c4b998;
+    }
+  
+@font-face {
+  font-family: 'HarryP';
+  src: url('HarryP.ttf') format('truetype');
+}
+.harry-title {
+  font-family: 'HarryP', serif;
+  font-size: 48px;
+  color: #c4b998;
+}
+
+.harry-logo {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.harry-logo {
+  display: block;
+  max-width: 500px;
+  margin: 60px auto;
+}
+
+.golden-logo {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: brightness(1.2);
+}
+</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="logo"><img alt="Golden Triangle" class="golden-logo" src="golden-triangle.png"/></div>
+<nav>
+<a href="#">Home</a><span style="display: inline-block; width: 10px; height: 10px; transform: rotate(45deg); border: 1px solid #c4b998; margin: 0 12px;"></span>
+<a href="#">World of Fantasy</a><span style="display: inline-block; width: 10px; height: 10px; transform: rotate(45deg); border: 1px solid #c4b998; margin: 0 12px;"></span>
+<a href="#">Privacy</a><span style="display: inline-block; width: 10px; height: 10px; transform: rotate(45deg); border: 1px solid #c4b998; margin: 0 12px;"></span>
+<a href="#">World of Wizarding</a><span style="display: inline-block; width: 10px; height: 10px; transform: rotate(45deg); border: 1px solid #c4b998; margin: 0 12px;"></span>
+<a href="#">About us</a>
+</nav>
+<div style="color: #c4b998; font-size: 14px; transform: rotate(5deg); border: 1px solid #c4b998; padding: 4px 10px; transform: rotate(45deg); display: inline-block;"><div style="transform: rotate(-45deg);; font-style: italic; text-transform: lowercase; font-size: 13px;">en</div></div>
+</header>
+<section class="hero">
+<div class="numbers">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+</div>
+<div class="social-icons">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+<img alt="Harry Potter 3D Logo" class="harry-logo" src="Harry-Potter-17-6-2025.png"/><div class="characters" style="gap: 100px; padding: 0 120px; justify-content: space-between;">
+<img alt="Voldemort" src="https://i.ibb.co/xSkcKcn/voldemort.png"/>
+<img alt="Harry Potter" src="https://i.ibb.co/SR9HD7s/harry.png"/>
+</div>
+<div class="fog"></div>
+<div class="scroll-arrow">↓</div>
+</section>
+</body>
+</html>
